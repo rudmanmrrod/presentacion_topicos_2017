@@ -1,0 +1,29 @@
+<div>
+	Se viene lo bueno... <h4>¿Cómo se instala el sistema de modelado de tópicos? Parte 2 - Freeling</h4>
+	<ul>
+		<li>Lo primero es descargar el freeling, en su página oficial xxx, por motivos de este taller esta disponible en dirección http://192.168.12.65/freeling/</li>
+		<li>Según la documentación oficial del freeling ubicada en xxx, las dependencias son las siguientes: </li>
+		<ul>
+			<li>sudo apt-get install libboost-regex-dev libicu-dev zlib1g-dev libboost-dev</li>
+			<li>sudo apt-get install libboost-system-dev libboost-program-options-dev libboost-thread-dev</li>
+		<ul>
+		<li>Con estas dependencias instaladas, descomprimimos el archivo del freeling, entramos con la consola y ejecutamos: </li>
+		<ul>
+			<li>autoreconf --install</li>
+			<li>./configure</li>
+			<li>make</li>
+			<li>sudo make install</li>
+		</ul>
+		<li>Si al hacer esto no obtuvimos errores, ya estamos listos, ahora si nos da error con el <b>./configure</b> o <b>make</b> será un dolor
+		de cabeza.</li>
+		<li>Como consuelo, instalamos el freeling 4.0 en una instalación limpia de debian 9 y no tuvimos problemas.</li>
+		<li>Con esto listo, el freeling se debió haber instalado en una ruta similar a esta <i>/usr/local/share/freeling/</i>, al menos en debian lo debió
+		hacer</li>
+		<li>Ya sólo nos queda añadir la ruta a las variables de entorno, en el <b> ~/.bashrc</b> agregamos al final la linea <b>export FREELINGSHARE="/usr/local/share/freeling/"</b>
+		 recordemos que la ruta puede variar.</li>
+		<li>Si ejecutamos esto en consola <b>/usr/local/bin/analyzer -f /usr/local/share/freeling/config/es.cfg</b> y nos da este error: 
+		<i>LC_ALL: cannot change locale (en_US.UTF-8): No such file or directory.</i> lo podemos solucionar ejecutando el comando 
+		<b>sudo dpkg-reconfigure locales</b>, y agregar el paquete <b>en_US.UTF-8</b></li>
+		<li>Ya con eso estamos listos con este largo y engorroso paso.</li>
+	</ul>
+</div>

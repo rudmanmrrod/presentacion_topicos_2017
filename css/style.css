@@ -34,3 +34,30 @@ body {
 	-webkit-align-items: center;
 	align-items: center;
 }
+
+.orgchart{
+	background-image:none;
+}
+
+.orgchart .node .title {
+	background-color:steelblue;
+    height: auto;
+	white-space: inherit;
+	border-radius: 5px;
+}
+
+.orgchart tr.lines td.leftLine {
+	border-left: 1px solid steelblue;
+}
+
+.orgchart tr.lines td.rightLine {
+	border-right: 1px solid steelblue;
+}
+
+.orgchart tr.lines td.topLine {
+	border-top: 1px solid steelblue;
+}
+
+.orgchart tr.lines .downLine {
+	background-color: steelblue;
+}

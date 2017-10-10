@@ -3,4 +3,13 @@ $(document).ready(function(){
 	cargar_contenido('#2_ter','2_terminos.html');
 	cargar_contenido('#3_mod','3_modelado.html');
 	cargar_contenido('#4_lda','4_lda.html');
+	cargar_contenido('#5_func_lda','5_funcionamiento_lda.html');
+	cargar_contenido('#6_met_lda','6_metodologia_lda.html');
+	cargar_contenido('#7_met_lda_2','7_metod_lda_2.html');
+	cargar_contenido('#8_instalar_1','8_como_instalar_1.html');
+	cargar_contenido('#9_instalar_2','9_como_instalar_2.html');
+	cargar_contenido('#10_instalar_3','10_como_instalar_3.html');
+	cargar_contenido('#11_howto','11_how_to.html');
+	cargar_contenido('#12_metodologia_1','12_metodologia_1.html');
+	cargar_contenido('#13_metodologia_2','13_metodologia_2.html');
 });
